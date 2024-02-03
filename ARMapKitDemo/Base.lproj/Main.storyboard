@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wYh-ZI-Ajs">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ARMapKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAP-OY-fBy">
+                                <rect key="frame" x="40" y="203" width="313" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VV0-Kl-htr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="AR Map">
+                                    <imageReference key="image" image="map.circle.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTappedStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhk-rH-vVt"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAP-OY-fBy" secondAttribute="trailing" constant="40" id="21q-qa-aC3"/>
+                            <constraint firstItem="gAP-OY-fBy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Urx-ld-X79"/>
+                            <constraint firstItem="gAP-OY-fBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iDx-oQ-43U"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bLM-Di-Kpy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--MapPOI View Controller-->
+        <scene sceneID="grA-Xb-Awg">
+            <objects>
+                <viewController storyboardIdentifier="ARMapPOIViewController" id="qt6-dA-A5e" customClass="ARMapPOIViewController" customModule="ARMapKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="azT-zt-gFt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-fx-ddK">
+                                <rect key="frame" x="0.0" y="426" width="393" height="426"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffc-Op-3mt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                            </arscnView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dJs-Kf-p8I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dT4-fx-ddK" secondAttribute="trailing" id="175-uv-AdW"/>
+                            <constraint firstItem="ffc-Op-3mt" firstAttribute="top" secondItem="azT-zt-gFt" secondAttribute="top" id="3zd-r9-Zz4"/>
+                            <constraint firstAttribute="bottom" secondItem="dT4-fx-ddK" secondAttribute="bottom" id="Fer-Er-7wJ"/>
+                            <constraint firstItem="dT4-fx-ddK" firstAttribute="height" secondItem="azT-zt-gFt" secondAttribute="height" multiplier="0.5" id="Gua-r4-0NR"/>
+                            <constraint firstItem="dT4-fx-ddK" firstAttribute="top" secondItem="ffc-Op-3mt" secondAttribute="bottom" id="LMM-xj-jol"/>
+                            <constraint firstItem="dT4-fx-ddK" firstAttribute="leading" secondItem="dJs-Kf-p8I" secondAttribute="leading" id="XVL-iN-LBt"/>
+                            <constraint firstItem="ffc-Op-3mt" firstAttribute="leading" secondItem="azT-zt-gFt" secondAttribute="leading" id="h7t-Hx-NY9"/>
+                            <constraint firstAttribute="trailing" secondItem="ffc-Op-3mt" secondAttribute="trailing" id="nds-Ql-H4H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="ffc-Op-3mt" id="K5z-jZ-ut6"/>
+                        <outlet property="mapView" destination="dT4-fx-ddK" id="TXc-e4-K9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2F-cW-WEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.48854961832058" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rhm-2C-SmT">
+            <objects>
+                <navigationController id="wYh-ZI-Ajs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKZ-Kx-BV2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Hf-Ia-fVL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQQ-h3-vwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

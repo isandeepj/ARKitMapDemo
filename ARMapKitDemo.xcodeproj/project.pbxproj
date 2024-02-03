@@ -13,6 +13,16 @@
 		002DEC6D2B6E6F8A007C2D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002DEC6B2B6E6F8A007C2D82 /* Main.storyboard */; };
 		002DEC6F2B6E6F8B007C2D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002DEC6E2B6E6F8B007C2D82 /* Assets.xcassets */; };
 		002DEC722B6E6F8B007C2D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 002DEC702B6E6F8B007C2D82 /* LaunchScreen.storyboard */; };
+		002DEC7A2B6E730D007C2D82 /* ARMapPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC792B6E730D007C2D82 /* ARMapPOIViewController.swift */; };
+		002DEC7C2B6E7393007C2D82 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC7B2B6E7393007C2D82 /* LocationManager.swift */; };
+		002DEC7E2B6E73A9007C2D82 /* BusinessPOI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC7D2B6E73A9007C2D82 /* BusinessPOI.swift */; };
+		002DEC802B6E73BD007C2D82 /* AnnotationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC7F2B6E73BD007C2D82 /* AnnotationNode.swift */; };
+		002DEC822B6E73D0007C2D82 /* LocationAnnotationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC812B6E73D0007C2D82 /* LocationAnnotationNode.swift */; };
+		002DEC852B6E7424007C2D82 /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC842B6E7424007C2D82 /* SCNNode.swift */; };
+		002DEC872B6E744F007C2D82 /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC862B6E744F007C2D82 /* SCNVector3.swift */; };
+		002DEC892B6E7473007C2D82 /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC882B6E7473007C2D82 /* CLLocation.swift */; };
+		002DEC8B2B6E74CA007C2D82 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC8A2B6E74CA007C2D82 /* Double.swift */; };
+		002DEC912B6E7586007C2D82 /* MatrixHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEC902B6E7586007C2D82 /* MatrixHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		002DEC6E2B6E6F8B007C2D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		002DEC712B6E6F8B007C2D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		002DEC732B6E6F8B007C2D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002DEC792B6E730D007C2D82 /* ARMapPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMapPOIViewController.swift; sourceTree = "<group>"; };
+		002DEC7B2B6E7393007C2D82 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		002DEC7D2B6E73A9007C2D82 /* BusinessPOI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessPOI.swift; sourceTree = "<group>"; };
+		002DEC7F2B6E73BD007C2D82 /* AnnotationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationNode.swift; sourceTree = "<group>"; };
+		002DEC812B6E73D0007C2D82 /* LocationAnnotationNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotationNode.swift; sourceTree = "<group>"; };
+		002DEC842B6E7424007C2D82 /* SCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		002DEC862B6E744F007C2D82 /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
+		002DEC882B6E7473007C2D82 /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
+		002DEC8A2B6E74CA007C2D82 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		002DEC902B6E7586007C2D82 /* MatrixHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +78,63 @@
 			children = (
 				002DEC652B6E6F8A007C2D82 /* AppDelegate.swift */,
 				002DEC672B6E6F8A007C2D82 /* SceneDelegate.swift */,
-				002DEC692B6E6F8A007C2D82 /* ViewController.swift */,
+				002DEC8E2B6E7549007C2D82 /* Controllers */,
+				002DEC8F2B6E755B007C2D82 /* Models */,
+				002DEC8D2B6E7518007C2D82 /* Classes */,
+				002DEC832B6E73F5007C2D82 /* Extensions */,
 				002DEC6B2B6E6F8A007C2D82 /* Main.storyboard */,
 				002DEC6E2B6E6F8B007C2D82 /* Assets.xcassets */,
 				002DEC702B6E6F8B007C2D82 /* LaunchScreen.storyboard */,
 				002DEC732B6E6F8B007C2D82 /* Info.plist */,
 			);
 			path = ARMapKitDemo;
+			sourceTree = "<group>";
+		};
+		002DEC832B6E73F5007C2D82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				002DEC842B6E7424007C2D82 /* SCNNode.swift */,
+				002DEC862B6E744F007C2D82 /* SCNVector3.swift */,
+				002DEC882B6E7473007C2D82 /* CLLocation.swift */,
+				002DEC8A2B6E74CA007C2D82 /* Double.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		002DEC8C2B6E74EB007C2D82 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				002DEC812B6E73D0007C2D82 /* LocationAnnotationNode.swift */,
+				002DEC7F2B6E73BD007C2D82 /* AnnotationNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		002DEC8D2B6E7518007C2D82 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				002DEC7B2B6E7393007C2D82 /* LocationManager.swift */,
+				002DEC902B6E7586007C2D82 /* MatrixHelper.swift */,
+				002DEC8C2B6E74EB007C2D82 /* Nodes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		002DEC8E2B6E7549007C2D82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				002DEC692B6E6F8A007C2D82 /* ViewController.swift */,
+				002DEC792B6E730D007C2D82 /* ARMapPOIViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		002DEC8F2B6E755B007C2D82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				002DEC7D2B6E73A9007C2D82 /* BusinessPOI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002DEC7E2B6E73A9007C2D82 /* BusinessPOI.swift in Sources */,
+				002DEC872B6E744F007C2D82 /* SCNVector3.swift in Sources */,
+				002DEC892B6E7473007C2D82 /* CLLocation.swift in Sources */,
+				002DEC822B6E73D0007C2D82 /* LocationAnnotationNode.swift in Sources */,
 				002DEC6A2B6E6F8A007C2D82 /* ViewController.swift in Sources */,
+				002DEC912B6E7586007C2D82 /* MatrixHelper.swift in Sources */,
+				002DEC852B6E7424007C2D82 /* SCNNode.swift in Sources */,
 				002DEC662B6E6F8A007C2D82 /* AppDelegate.swift in Sources */,
+				002DEC802B6E73BD007C2D82 /* AnnotationNode.swift in Sources */,
+				002DEC7C2B6E7393007C2D82 /* LocationManager.swift in Sources */,
+				002DEC7A2B6E730D007C2D82 /* ARMapPOIViewController.swift in Sources */,
+				002DEC8B2B6E74CA007C2D82 /* Double.swift in Sources */,
 				002DEC682B6E6F8A007C2D82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -290,25 +370,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PR6CRGFDP2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARMapKitDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to provide augmented reality experiences.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location to display nearby businesses on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to display nearby businesses on the map.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.ARMapKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armapkit.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.eastmeeteast.eme-ios";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,25 +406,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PR6CRGFDP2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARMapKitDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to provide augmented reality experiences.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location to display nearby businesses on the map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to display nearby businesses on the map.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.ARMapKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.armapkit.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.eastmeeteast.eme-ios";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
